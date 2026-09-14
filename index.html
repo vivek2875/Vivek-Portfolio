@@ -3,73 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vivek Vats | Frontend Developer and final-year Computer Science and Engineering student.">
-    <title>Vivek Vats | Frontend Developer</title>
+    <meta name="description" content="Vivek Vats is a final-year CSE student combining data analytics, software engineering, and business problem-solving. Explore projects, experience, and resumes.">
+    <meta name="theme-color" content="#102a43">
+    <title>Vivek Vats | Data Analyst &amp; Software Developer</title>
+    <link rel="canonical" href="https://vivek2875.github.io/Vivek-Portfolio/">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="CSS/style.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vivek Vats | Data Analyst &amp; Software Developer">
+    <meta property="og:description" content="Explore Vivek Vats' work across data analytics, software engineering, and business problem-solving.">
+    <meta property="og:url" content="https://vivek2875.github.io/Vivek-Portfolio/">
+    <meta property="og:image" content="https://vivek2875.github.io/Vivek-Portfolio/assets/social-cover.png">
+    <meta property="og:image:alt" content="Abstract blue data and software engineering visual for Vivek Vats' portfolio.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vivek Vats | Data Analyst &amp; Software Developer">
+    <meta name="twitter:description" content="Data analytics, software engineering, and practical business problem-solving.">
+    <meta name="twitter:image" content="https://vivek2875.github.io/Vivek-Portfolio/assets/social-cover.png">
 </head>
 <body>
-    <header class="hero">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header id="top" class="hero">
         <div class="container">
-            <p class="eyebrow">Portfolio</p>
-            <h1>Vivek Vats</h1>
-            <p class="hero__role">Frontend Developer <span aria-hidden="true">|</span> Final-Year CSE Student</p>
-            <a class="hero__cta" href="#experience">View experience</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a class="site-nav__brand" href="#top" aria-label="Vivek Vats home">
+                    <span aria-hidden="true">VV</span>
+                    <span>Vivek Vats</span>
+                </a>
+                <ul class="site-nav__links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hero__layout">
+                <div class="hero__copy">
+                    <p class="eyebrow">Portfolio 2026</p>
+                    <h1>Vivek Vats</h1>
+                    <p class="hero__positioning">Data Analyst <span aria-hidden="true">&bull;</span> Software Developer <span aria-hidden="true">&bull;</span> CSE Student</p>
+                    <p class="hero__tagline">I turn data, software, and business context into practical, decision-ready solutions.</p>
+                    <div class="hero__actions">
+                        <a class="button button--primary" href="#projects">View Projects <span aria-hidden="true">&#8595;</span></a>
+                        <a class="button button--secondary" href="output/pdf/vivek-vats-analyst-resume.pdf" download>Analyst Resume <span aria-hidden="true">&#8595;</span></a>
+                        <a class="button button--secondary" href="output/pdf/vivek-vats-technical-resume.pdf" download>Technical Resume <span aria-hidden="true">&#8595;</span></a>
+                    </div>
+                </div>
+
+                <div class="hero__visual" aria-hidden="true">
+                    <img src="assets/social-cover.png" alt="">
+                    <div class="hero__visual-label">
+                        <span>Focus areas</span>
+                        <strong>Data. Software. Business.</strong>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <nav aria-label="Primary navigation">
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <main>
-        <section id="about" class="section section--intro">
+    <main id="main-content">
+        <section id="projects" class="section section--projects">
             <div class="container">
-                <p class="section-label">About</p>
-                <h2>Building thoughtful, user-friendly web experiences.</h2>
-                <p class="intro-copy">I’m Vivek Vats, a final-year Computer Science and Engineering student at Punjab Engineering College with hands-on experience building responsive web interfaces and integrating REST APIs. I enjoy turning requirements into clean, reliable, user-friendly digital experiences.</p>
+                <p class="section-label">Featured projects</p>
+                <h2>Work at the intersection of analytics, software, and business.</h2>
+                <p class="section-intro">A selection of data-analysis and software-development work, with each project grounded in a clear user or business problem.</p>
+
+                <div class="projects-grid">
+                    <article class="project-card project-card--featured">
+                        <div class="project-card__visual project-card__visual--oncology" aria-hidden="true">
+                            <span class="visual-label">Scenario model</span>
+                            <div class="visual-bars"><i></i><i></i><i></i><i></i><i></i></div>
+                            <div class="visual-metric"><span>Patient pool</span><strong>Forecast</strong></div>
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__category">Data analytics</p>
+                            <h3>Oncology Patient-Pool &amp; Market Opportunity Forecast</h3>
+                            <p>A scenario-based analytics project that frames oncology patient-pool and market-opportunity questions for more informed business planning.</p>
+                            <ul class="tech-list" aria-label="Technologies used">
+                                <li>Python</li>
+                                <li>Streamlit</li>
+                                <li>Scenario Modeling</li>
+                                <li>Data Analytics</li>
+                            </ul>
+                            <div class="project-card__actions">
+                                <a href="https://github.com/vivek2875/Oncology-Patient-Pool-Market-Opportunity-Forecast" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card--featured">
+                        <div class="project-card__visual project-card__visual--mandi" aria-hidden="true">
+                            <span class="visual-label">Market intelligence</span>
+                            <div class="visual-line"><i></i><i></i><i></i><i></i><i></i></div>
+                            <div class="visual-metric"><span>Price and supply</span><strong>Insights</strong></div>
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__category">Data analytics</p>
+                            <h3>FarmEasy Mandi Price &amp; Supply Intelligence</h3>
+                            <p>A market-intelligence project that organizes mandi price and supply information into a decision-support workflow for agricultural analysis.</p>
+                            <ul class="tech-list" aria-label="Technologies used">
+                                <li>Power BI</li>
+                                <li>DAX</li>
+                                <li>Market Analytics</li>
+                                <li>Data Visualization</li>
+                            </ul>
+                            <div class="project-card__actions">
+                                <a href="https://github.com/vivek2875/Farmeasy-Mandi" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__visual project-card__visual--gallery" aria-hidden="true">
+                            <span class="visual-label">Personal gallery</span>
+                            <div class="gallery-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                        </div>
+                        <div class="project-card__body">
+                            <p class="project-card__category">Software development</p>
+                            <h3>Personal Gallery</h3>
+                            <p>A private gallery application with email-OTP authentication and tools to upload and manage personal images.</p>
+                            <ul class="tech-list" aria-label="Technologies used">
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>Email OTP</li>
+                                <li>File Management</li>
+                            </ul>
+                            <div class="project-card__actions">
+                                <a href="https://github.com/vivek2875/GalleryApp" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <figure class="project-card__visual project-card__visual--image project-card__visual--campus">
+                            <img src="assets/projects/campusconnect-logo.png" alt="CampusConnect logo">
+                        </figure>
+                        <div class="project-card__body">
+                            <p class="project-card__category">Software development <span class="status-pill">In development</span></p>
+                            <h3>CampusConnect</h3>
+                            <p>A modular campus platform in development, centred on authentication, real-time interaction, and organized community experiences.</p>
+                            <ul class="tech-list" aria-label="Technologies used">
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                                <li>Redis</li>
+                                <li>Socket.io</li>
+                            </ul>
+                            <div class="project-card__actions">
+                                <a href="https://github.com/vivek2875/CampusConnect" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <figure class="project-card__visual project-card__visual--image">
+                            <img src="assets/projects/farmeasy-market.jpg" alt="FarmEasy local farming marketplace banner">
+                        </figure>
+                        <div class="project-card__body">
+                            <p class="project-card__category">Web development</p>
+                            <h3>FarmEasy - Local Farming Market</h3>
+                            <p>A local farming marketplace that helps shoppers discover produce while supporting farmer-to-buyer connections.</p>
+                            <ul class="tech-list" aria-label="Technologies used">
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>Bootstrap</li>
+                                <li>jQuery</li>
+                            </ul>
+                            <div class="project-card__actions">
+                                <a href="https://github.com/vivek2875/FarmEasy-Local-Farming-Marketplace" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="education" class="section section--muted">
-            <div class="container">
-                <p class="section-label">Education</p>
-                <h2>Academic foundation</h2>
-                <article class="education-card">
-                    <div>
-                        <h3>B.Tech in Computer Science &amp; Engineering</h3>
-                        <p>Punjab Engineering College</p>
-                    </div>
-                    <p class="education-card__status">Fourth-Year Student</p>
-                </article>
+        <section id="about" class="section section--muted">
+            <div class="container about-layout">
+                <div>
+                    <p class="section-label">About</p>
+                    <h2>Technical depth with a practical business mindset.</h2>
+                    <p class="section-intro">Final-year Computer Science Engineering student with hands-on experience in software development, web development, financial advisory, and client-facing roles, along with project-based exposure to market analysis and data analytics. Skilled in C++, Python, SQL, Power BI, REST APIs, authentication workflows, and database-backed applications. Able to analyze data, build scenario-based models, solve technical problems, and translate complex information into practical business insights, with strong teamwork, communication, and stakeholder-management abilities.</p>
+                </div>
+                <aside class="education-card" aria-label="Education">
+                    <p class="education-card__label">Education</p>
+                    <h3>B.Tech in Computer Science &amp; Engineering</h3>
+                    <p>Punjab Engineering College</p>
+                    <span>Final-year student</span>
+                </aside>
             </div>
         </section>
 
-        <section id="experience" class="section">
+        <section id="skills" class="section">
+            <div class="container">
+                <p class="section-label">Skills</p>
+                <h2>A balanced toolkit for analysis and development.</h2>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>Data &amp; Analytics</h3>
+                        <ul>
+                            <li>Python</li><li>SQL</li><li>Power BI</li><li>Excel</li><li>Pandas</li><li>EDA</li><li>Data Visualization</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Development</h3>
+                        <ul>
+                            <li>C++</li><li>JavaScript</li><li>React</li><li>Node.js</li><li>Express.js</li><li>HTML</li><li>CSS</li><li>REST APIs</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Databases</h3>
+                        <ul>
+                            <li>MySQL</li><li>MongoDB</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Git</li><li>GitHub</li><li>VS Code</li><li>Jupyter</li><li>Google Colab</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section section--muted">
             <div class="container">
                 <p class="section-label">Experience</p>
-                <h2>Professional experience</h2>
+                <h2>Experience built around execution and relationships.</h2>
                 <div class="experience-timeline">
                     <article class="experience-card">
                         <div class="experience-card__header">
                             <div>
                                 <h3>Frontend Web Developer Intern</h3>
-                                <p class="experience-card__company">Ziion Technology, Mohali</p>
+                                <p>Ziion Technology, Mohali</p>
                             </div>
-                            <p class="experience-card__date">Feb 2026 – Jul 2026</p>
+                            <p class="experience-card__date">Feb 2026 - Jul 2026</p>
                         </div>
-                        <ul class="experience-card__details">
-                            <li>Developed responsive web interfaces using HTML, CSS, JavaScript, and Bootstrap.</li>
-                            <li>Integrated REST APIs and collaborated with backend developers to build, test, and debug features.</li>
-                            <li>Improved usability and cross-browser consistency through iterative testing and UI refinements.</li>
+                        <ul>
+                            <li>Translated product requirements into responsive, API-connected interfaces using HTML, CSS, JavaScript, and Bootstrap.</li>
+                            <li>Partnered with backend developers to test and resolve issues, strengthening feature reliability, usability, and cross-browser consistency.</li>
                         </ul>
                     </article>
 
@@ -77,67 +253,54 @@
                         <div class="experience-card__header">
                             <div>
                                 <h3>Relationship Executive Intern</h3>
-                                <p class="experience-card__company">Mint Enterprises Private Limited</p>
+                                <p>Mint Global (Mint Enterprises Private Limited)</p>
                             </div>
-                            <p class="experience-card__date">Jan 2026 – Feb 2026</p>
+                            <p class="experience-card__date">Jan 2026 - Feb 2026</p>
                         </div>
-                        <ul class="experience-card__details">
-                            <li>Assessed client requirements and presented suitable global equity fund and real-estate options clearly and professionally.</li>
-                            <li>Addressed financial-product queries, supported documentation, and ensured timely follow-ups.</li>
-                            <li>Maintained organised client records and coordinated interactions to strengthen service and relationship management.</li>
+                        <ul>
+                            <li>Mapped client requirements to relevant global equity fund and real-estate options, communicating complex product information clearly.</li>
+                            <li>Supported documentation, disciplined follow-ups, and organized client records to strengthen service quality and relationship continuity.</li>
                         </ul>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="section section--muted">
+        <section id="certificates" class="section">
             <div class="container">
-                <p class="section-label">Skills</p>
-                <h2>Tools I work with</h2>
-                <ul class="skills-list">
-                    <li>HTML, CSS &amp; JavaScript</li>
-                    <li>React &amp; Node.js</li>
-                    <li>Python &amp; Django</li>
-                    <li>Git &amp; GitHub</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
-                <p class="section-label">Projects</p>
-                <h2>Selected work</h2>
-                <div class="project">
-                    <h3>Cricinfo</h3>
-                    <p>A portfolio project focused on a clear, accessible cricket-information experience.</p>
-                    <a href="https://github.com/vivek2875/cricinfo" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
-                </div>
-                <div class="project">
-                    <h3>Express</h3>
-                    <p>An Express-focused project demonstrating clean structure and practical web-development fundamentals.</p>
-                    <a href="https://github.com/vivek2875" target="_blank" rel="noopener noreferrer">Explore GitHub <span aria-hidden="true">↗</span></a>
+                <p class="section-label">Certificates</p>
+                <h2>Verified credentials, ready to add.</h2>
+                <div class="certificate-empty">
+                    <span class="certificate-empty__icon" aria-hidden="true">&#10003;</span>
+                    <div>
+                        <h3>Certificate details will appear here</h3>
+                        <p>Add certificate names, issuing organizations, and credential links to turn this into a verified credentials section.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="section section--contact">
-            <div class="container">
-                <p class="section-label">Contact</p>
-                <h2>Let’s build something useful.</h2>
-                <p class="contact-copy">If you’d like to get in touch or learn more about my work, feel free to reach out.</p>
-                <ul class="contact-list">
-                    <li><a href="mailto:vivekvats2875@gmail.com">vivekvats2875@gmail.com</a></li>
-                    <li><a href="https://www.linkedin.com/in/vivek-vats-43a29628a" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
-                    <li><a href="https://github.com/vivek2875" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
-                </ul>
+            <div class="container contact-layout">
+                <div>
+                    <p class="section-label">Contact</p>
+                    <h2>Let’s Connect.</h2>
+                    <p>Open to conversations around data, software, business problems, and new opportunities.</p>
+                </div>
+                <div class="contact-actions">
+                    <a class="button button--light" href="mailto:vivekvats2875@gmail.com">Email Vivek <span aria-hidden="true">&#8599;</span></a>
+                    <a href="https://www.linkedin.com/in/vivek-vats-43a29628a" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">&#8599;</span></a>
+                    <a href="https://github.com/vivek2875" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a>
+                    <a href="output/pdf/vivek-vats-analyst-resume.pdf" download>Analyst Resume <span aria-hidden="true">&#8595;</span></a>
+                    <a href="output/pdf/vivek-vats-technical-resume.pdf" download>Technical Resume <span aria-hidden="true">&#8595;</span></a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Vivek Vats. All rights reserved.</p>
+            <p>&copy; 2026 Vivek Vats. Built around data, software, and practical problem-solving.</p>
         </div>
     </footer>
 </body>
