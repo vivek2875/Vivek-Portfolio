@@ -317,6 +317,10 @@ img {
     font-size: clamp(1rem, 1.7vw, 1.12rem);
 }
 
+.section-intro--followup {
+    margin-top: 0.8rem;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -351,18 +355,6 @@ img {
     background: #102a43;
 }
 
-.project-card__visual--oncology {
-    background: radial-gradient(circle at 86% 12%, rgba(167, 139, 250, 0.8), transparent 36%), linear-gradient(140deg, #1e3a5f, #16233d 74%);
-}
-
-.project-card__visual--mandi {
-    background: radial-gradient(circle at 88% 8%, rgba(45, 212, 191, 0.62), transparent 33%), linear-gradient(140deg, #0f4c5c, #102a43 74%);
-}
-
-.project-card__visual--gallery {
-    background: linear-gradient(135deg, #30315e, #17263c 78%);
-}
-
 .project-card__visual--image {
     padding: 0;
     background: #dbeafe;
@@ -372,6 +364,33 @@ img {
     width: 100%;
     height: 205px;
     object-fit: cover;
+}
+
+.project-card__visual--oncology-preview img {
+    object-position: center top;
+}
+
+.project-card__visual--gallery-screens {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 0.35rem;
+    min-height: 205px;
+    padding: 0.35rem;
+    background: #0b1725;
+}
+
+.gallery-screenshot {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    border-radius: 0.35rem;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.gallery-screenshot--home {
+    grid-row: span 2;
 }
 
 .project-card__visual--campus {
@@ -386,103 +405,6 @@ img {
     height: 145px;
     object-fit: contain;
 }
-
-.visual-label {
-    color: #c7d2fe;
-    font-size: 0.7rem;
-    font-weight: 800;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-}
-
-.visual-bars,
-.visual-line {
-    display: flex;
-    align-items: flex-end;
-    gap: 0.55rem;
-    height: 72px;
-    margin-top: auto;
-}
-
-.visual-bars i {
-    width: 14%;
-    border-radius: 0.35rem 0.35rem 0.08rem 0.08rem;
-    background: linear-gradient(180deg, #a5b4fc, #6366f1);
-}
-
-.visual-bars i:nth-child(1) { height: 37%; }
-.visual-bars i:nth-child(2) { height: 58%; }
-.visual-bars i:nth-child(3) { height: 47%; }
-.visual-bars i:nth-child(4) { height: 86%; }
-.visual-bars i:nth-child(5) { height: 72%; }
-
-.visual-line {
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid rgba(191, 219, 254, 0.42);
-    height: 74px;
-}
-
-.visual-line::before {
-    position: absolute;
-    top: 22px;
-    right: 1.1rem;
-    left: 0.8rem;
-    height: 3px;
-    transform: rotate(-10deg);
-    transform-origin: left center;
-    background: #5eead4;
-    box-shadow: 28px 14px 0 -1px #5eead4, 65px -3px 0 -1px #5eead4, 112px 12px 0 -1px #5eead4;
-    content: "";
-}
-
-.visual-line i {
-    z-index: 1;
-    width: 0.55rem;
-    height: 0.55rem;
-    border: 2px solid #ccfbf1;
-    border-radius: 50%;
-    background: #0f766e;
-}
-
-.visual-metric {
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 0.8rem;
-}
-
-.visual-metric span {
-    color: #bfdbfe;
-    font-size: 0.8rem;
-}
-
-.visual-metric strong {
-    color: #ffffff;
-    font-size: 1.1rem;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-    height: 100%;
-    margin-top: 1rem;
-}
-
-.gallery-grid i {
-    min-height: 55px;
-    border-radius: 0.45rem;
-    background: linear-gradient(135deg, #c4b5fd, #818cf8);
-}
-
-.gallery-grid i:nth-child(2),
-.gallery-grid i:nth-child(5) { background: linear-gradient(135deg, #f9a8d4, #db2777); }
-.gallery-grid i:nth-child(3) { background: linear-gradient(135deg, #93c5fd, #2563eb); }
-.gallery-grid i:nth-child(4),
-.gallery-grid i:nth-child(6) { background: linear-gradient(135deg, #5eead4, #0f766e); }
 
 .project-card__body {
     display: flex;
@@ -525,6 +447,19 @@ img {
     margin-top: 0.72rem;
     color: var(--muted);
     font-size: 0.94rem;
+}
+
+.project-card--no-preview .project-card__body {
+    padding: 1.7rem;
+}
+
+.project-card__note {
+    margin-top: 1rem;
+    border-left: 3px solid #bfdbfe;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    padding-left: 0.72rem;
 }
 
 .tech-list {
@@ -736,38 +671,67 @@ img {
     content: "";
 }
 
-.certificate-empty {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    max-width: 740px;
-    margin-top: 2rem;
-    border: 1px dashed #9db9d8;
-    border-radius: var(--radius);
-    background: #f7faff;
-    padding: 1.4rem;
-}
-
-.certificate-empty__icon {
+.certificates-grid {
     display: grid;
-    flex: 0 0 auto;
-    width: 2.5rem;
-    height: 2.5rem;
-    place-items: center;
-    border-radius: 50%;
-    color: #1e40af;
-    background: var(--brand-soft);
-    font-weight: 900;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    margin-top: 2.2rem;
 }
 
-.certificate-empty h3 {
-    font-size: 1.05rem;
+.certificate-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: #ffffff;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
 }
 
-.certificate-empty p {
-    margin-top: 0.3rem;
+.certificate-card::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 0.3rem;
+    background: linear-gradient(90deg, var(--brand), var(--accent));
+    content: "";
+}
+
+.certificate-card__issuer {
+    color: var(--brand);
+    font-size: 0.73rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.certificate-card h3 {
+    margin-top: 0.72rem;
+    font-size: 1.16rem;
+    line-height: 1.3;
+}
+
+.certificate-card__detail {
+    margin-top: 0.55rem;
     color: var(--muted);
-    font-size: 0.94rem;
+    font-size: 0.92rem;
+}
+
+.certificate-card a {
+    display: inline-flex;
+    margin-top: 1.25rem;
+    color: var(--brand);
+    font-size: 0.88rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.certificate-card a:hover,
+.certificate-card a:focus-visible {
+    color: var(--brand-dark);
+    text-decoration: underline;
 }
 
 .section--contact {
@@ -937,9 +901,8 @@ button:focus-visible {
         left: -1.66rem;
     }
 
-    .certificate-empty {
-        align-items: flex-start;
-        flex-direction: column;
+    .certificates-grid {
+        grid-template-columns: 1fr;
     }
 
     .contact-actions {
